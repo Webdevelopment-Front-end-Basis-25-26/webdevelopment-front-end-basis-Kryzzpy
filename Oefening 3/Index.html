@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening lijsten</title>
+</head>
+<body>
+<header>
+    <p>
+        <h1>Deze webpagina bevat voorbeelden van lijsten.</h1>
+        <a href="Tabellen.html">Klik hier om meer te weten over tabellen.</a>
+        <h2>Ongenummerde lijsten</h2>
+        De volgorde van de ingridienten van een recept zijn niet van belang.
+        <ul>
+            <li>200gr Bloem</li>
+            <li>4 Eieren</li>
+            <li>&frac12; liter Melk</li>
+        </ul>
+        <h2>Genummerde lijsten</h2>
+        De volgorde van de handelingen van het recept zijn vaak wel belangrijk
+        <ol>
+            <li>Doe de bloem in een kom.</li>
+            <li>Voeg hier de eieren aan toe en meng het beslag.</li>
+            <li>Voeg onder voortdurend roeren de melk toe.</li>
+        </ol>
+        <h2>Genummerde lijsten met de letters start vanaf C zonder klinkers</h2>
+        <ol type="a" start="3">
+            <li>Begin met de letter C</li>
+            <li>Ga dan gewoon verder met D</li>
+            <li value="6">Maar sla E over en ga direct naar F</li>
+            <li>Om dan gewoon terug te vervolgen met G</li>
+        </ol>
+        <h2>Ongenummerde lijsten met subonderwerpen</h2>
+        <ul>
+            <li>Wat betekent <i>Hogeschool?</i></li>
+            <li>
+                <abbr title="UC Leuven-Limburg">UCLL</abbr> staat voor:
+                <ul>
+                    <li>University College</li>
+                    <li>Leuven</li>
+                    <li>Limburg</li>
+                </ul>
+            </li>
+            <li>
+                <abbr title="Individueel Studieprogramma">ISP</abbr> staat voor:
+                <ul>
+                    <li>Individueel</li>
+                    <li>studieprogramma</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Geneste lijsten</h2>
+        Er bestaan verschillende soorten koppelingen:
+        <ol type="I">
+        <li>Absolute koppelingen
+            <ol type="a">
+                <li>naar externe webpagina's
+                    <ul>
+                        <li>of ankerposities op externe webpagina's</li>
+                    </ul>
+                </li>
+                <li>naar externe figuren</li>
+            </ol>
+        </li>
+        <li>Relatieve koppelingen
+            <ol type="a">
+                <li>Naar webpagina's binnen eigen website</li>
+                <li>Naar ankerposities
+                    <ul>
+                        <li>op dezelfde pagina</li>
+                        <li>op andere pagina's</li>
+                    </ul>
+                </li>
+                <li>Naar figuren binnen eigen website</li>
+            </ol>
+        </li>
+        </ol>
+        <h1>Definitie lijsten</h1>
+        <ul>
+            <li>Ongenummerde lijsten
+                <ul>
+                    <li>Ongenummerde lijsten worden weergegeven met de tag &lt;ul&gt;, elk item met &lt;li&gt;.</li>
+                </ul>
+            </li>
+            <li>Genummerde lijsten
+                <ul>
+                    <li>Genummerde lijsten worden weergegeven met de tag &lt;ol&gt;, elk item met &lt;li&gt;.</li>
+                </ul>
+            </li>
+            <li>Opties voor genummerde lijsten
+                <ul>
+                    <li>Je kunt de attributen style en start meegeven met de &lt;ol&gt; tag.</li>
+                    <li>Je kunt het attribuut value meegeven met de &lt;li&gt; tag.</li>
+                </ul>
+            </li>
+            <li>Ongenummerde lijsten met subonderwerp
+                <ul>
+                    <li>Sublijsten krijgen automatisch een ander opsommingsteken</li>
+                </ul>
+            </li>
+            <li>Geneste lijsten
+                <ul>
+                    <li>Je kunt tags &lt;ol&gt; en &lt;ul&gt; combineren.</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+</header>
+
+</body>
+</html>
