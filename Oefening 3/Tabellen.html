@@ -1,35 +1,61 @@
- ; ;<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oefening Tabellen</title>
+    <title>Tabellen</title>
 </head>
 <body>
-    <table border="1">
+    
+    <table>
+        <thead>
         <tr>
             <th colspan="3">Deze pagina bevat een voorbeeld van een tabel</th>
         </tr>
+        </thead>
+        <tbody></tbody>
         <tr>
-            <td>Jan</td>
-            <td>25</td>
-            <td>Amsterdam</td>
+            <td><a href="/index.html">Oefening Inleiding</a></td>
+            <td rowspan="4">In het midden plaatsen we een foto die deze les typeert
+                <figure>
+                    <img src="images/Tabellen.jpg"
+                        alt="Foto die tabellen typeert">
+                    <figcaption><b>Tabellen</b></figcaption>
+                </figure>
+                Als we over deze foto gaan krijgen we een tooltip te zien.
+                <br> Als we op de figuur klikken wordt deze op ware grootte in een nieuw venster getoond.
+            </td>
+            <td rowspan="2">Soorten lijsten
+                <ul>
+                    <li>Genummerde lijsten</li>
+                    <li>Ongenummerde lijsten</li>
+                    <li>Definitielijsten</li>
+                </ul>
+            </td>
         </tr>
         <tr>
-            <td>Marie</td>
-            <td>30</td>
-            <td>Rotterdam</td>
+            <td><a href="/Oefening 1/index.html">Oefening Koppelingen</a></td>
         </tr>
         <tr>
-            <td>Klaas</td>
-            <td>28</td>
-            <td>Utrecht</td>
+            <td><a href="/Oefening 2/index.html">Oefening Figuren</a></td>
+            <td rowspan ="2">Tabellen opbouwen
+                <ol>
+                    <li>Met de &lt;table&gt; tag</li>
+                    <li>Dan rijen opbouwen met de &lt;tr&gt; tag</li>
+                    <li>Binnen de rijen hebben we
+                        <ol type="a">
+                            <li>de &lt;td&gt; tag.</li>
+                            <li>de &lt;th&gt; tag.</li>
+
+                        </ol>
+                    </li>
+                </ol>
+            </td>
         </tr>
         <tr>
-            <td>Klaas</td>
-            <td>28</td>
-            <td>Utrecht</td>
+            <td><a href="Index.html">Oefening Lijsten</a></td>
         </tr>
+        </tbody>
     </table>
 </body>
 </html>
