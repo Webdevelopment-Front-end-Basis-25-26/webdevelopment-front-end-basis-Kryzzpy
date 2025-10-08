@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oefening formulieren</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Persoonlijke gegevens</legend>
+        <table>
+  <tr>
+    <td><label for="naam">Naam:</label></td>
+    <td><input type="text" id="naam" name="naam" required/></td>
+    <td><label for="voornaam">Voornaam:</label></td>
+    <td><input type="text" id="voornaam" name="voornaam" /></td>
+  </tr> 
+  <tr>
+    <td><label for="adres">Adres:</label></td>
+    <td colspan="3"><textarea id="adres" name="adres" rows="2" cols="50"></textarea><br></td>
+  </tr>
+  <tr>
+    <td><label for="postcode">Postcode:</label></td>
+    <td><input type="text" id="postcode" name="Postcode" /></td>
+    <td><label for="gemeente">Gemeente:</label></td>
+    <td><input type="text" id="gemeente" name="Gemeente"/></td>
+  </tr>
+  <tr>
+    <td><label for="email">Email adres:</label></td>
+    <td colspan="3"><input type="email" id="email" name="email" value='@student.ucll.be' size="50" /><br></td>
+  </tr>
+  <tr>
+    <td><label for="website">Website:</label></td>
+    <td colspan="3"><input type="url" id="website" name="website" placeholder="Website van je bedrijf" size="50" /><br></td>
+  </tr>
+  <tr>
+    <td><label for="geboortedatum">Geboortedatum:</label></td>
+    <td><input type="date" id="geboortedatum" name="geboortedatum"/></td>
+    <td><label for="aantal_kinderen">Aantal kinderen:</label></td>
+    <td><input type="number" id="aantal_kinderen" name="aantal_kinderen"/><br></td>
+  </tr>
+  <tr>
+    <td><label>Geslacht:</label></td>
+    <td colspan="3"><input type="radio" id="man" name="geslacht" value="man" />
+    <label for="man" class="inline">Man</label>
+    <input type="radio" id="vrouw" name="geslacht" value="vrouw" />
+    <label for="vrouw" class="inline">Vrouw</label>
+    <span style="color:blue;"></span><br></td></tr>
+  <tr>
+    <td colspan="2"><input type="checkbox" id="contact_email" name="contact_email" checked />
+    <label for="contact_email">Wij mogen u per e-mail contacteren</label></td>
+    <td colspan="2"><input type="checkbox" id="contact_post" name="contact_post" checked />
+    <label for="contact_post">Wij mogen u per post contacteren</label>
+    <span style="color:blue;"></span></td>
+  </tr>
+</table>
+        </fieldset>
+<br>
+        <fieldset>
+<legend>Opdracht</legend>
+<table>
+  <tr>
+    <td><label for="uploaden">Uploaden:</label></td>
+    <td><input type="file" id="uploaden" name="uploaden" /></td>
+    <td><label for="paswoord">Paswoord:</label></td>
+    <td><input type="password" id="paswoord" name="paswoord"/></td>
+  </tr>
+  <tr>
+    <td colspan="2">
+    <select id="keuze1" name="keuze1">
+  <option>Keuze1</option>
+  <option>Keuze2</option>
+  <option>Keuze3</option>
+  <option>Keuze4</option>
+  <option>Keuze5</option>
+</select>
+<span style="color:blue;"></span>
+<br></td>
+    <td colspan="2"><select id="keuze_meer" name="keuze_meer" multiple size="3">
+    <option selected>Keuze6</option>
+    <option>Keuze7</option>
+    <option>Keuze8</option>
+    </select>
+    <span style="color:blue;"></td>
+  </tr>
+  <tr>
+    <td><label for="zoeken">Zoeken:</label></td>
+    <td><input type="search" id="zoeken" name="zoeken"></td>
+  </tr>
+  <tr>
+    <td><label for="achtergrondkleur">Achtergrondkleur:</label></td>
+    <td><input type="color" id="achtergrondkleur" name="achtergrondkleur" value="#000000" />
+  <span style="color:blue;"></span></td>
+    <td><label for="afwijking">Afwijking:</label></td>
+    <td><input type="range" id="afwijking" name="afwijking" min="0" max="255" value="128" />
+    <span style="color:blue;"></span></td>
+  </tr>
+</table>   
+</fieldset>
+<input type="submit" value="Verstuur"/>
+<input type="reset" value="Maak Leeg"/>
+</form> 
+</body>
+</html>
