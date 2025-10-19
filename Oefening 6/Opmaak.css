@@ -1,0 +1,50 @@
+body {
+    background-color: #888888;
+    background-image: url('fotos/backdrop.gif');
+    background-repeat: repeat-y;
+    background-position: center;
+    color: rgb(12, 56, 233);
+    font-family: serif;
+}
+
+h1, h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+h1 {
+    font-size: 2em;
+    text-shadow: black 1px 1px 2px;
+    color: burlywood;
+    background-color: darkslategrey;
+}
+h2 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+}
+
+#beneden {
+    color:green;
+    background-color: rgba(234, 12, 123, 0.2);
+}
+li {
+    list-style-image: url('fotos/sqpurple.gif');
+    list-style-position: inside;
+}
+
+div {
+    font-style: oblique;
+}
+.intro {
+    font-weight: bold;
+}
+.besluit {
+    font-variant: small-caps;
+    font-size: 1em;
+}
+.inspringen {
+    text-indent: 20px;
+    font-variant: small-caps;
+}
