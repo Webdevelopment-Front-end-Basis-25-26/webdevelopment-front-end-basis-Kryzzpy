@@ -1,0 +1,152 @@
+body{
+    background-color: #dcf8c6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a{
+    color: blue;
+}
+
+h2{
+    font-size: 1.25em ;
+}
+
+header >  h2{
+    font-size: 1.75em;
+    text-align: center;
+}
+
+header > h2 > a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    background-color: #075e54;
+}
+nav{
+    list-style-image: url(images/link.png);
+    list-style-type: square;
+}
+
+nav a:hover{
+    background-color: #8c00ff;
+}
+nav a:active{
+    background-color: #41128c;
+    color: black;
+}
+nav a:first-child{
+    font-weight: bold;
+}  
+
+nav a:not(:first-child){
+    font-style: italic;
+}
+
+nav a::before{
+    content: url('images/link.png');
+}
+
+body > p{
+    font-variant: small-caps;
+}
+
+h2 + p{
+    text-indent: 2em;
+    font-style:italic;
+}
+
+body > p::first-letter{
+    font-weight: bold;
+}
+
+h2 ~ p::first-letter{
+    font-size: 1.75em;
+}
+
+ul > li {
+    color: green;
+    list-style-image: url('images/clipboard.png');
+}
+
+li ~ li {
+    color: red;
+}
+
+ul ul li {
+    color: blue;
+    list-style-image: none;
+    list-style-type: square;
+}
+
+
+ul > li > ul > li:first-child {
+    list-style-type: disc;
+}
+
+ul + ul{
+    color: red;
+}
+
+ul > li:hover ul li {
+    list-style-type: circle; 
+}
+
+
+/*input opmaak*/
+/*input text*/
+
+input[type="text"]{
+    font-size: 1em;
+}
+
+input[type="text"]:focus{
+    background-color: #11ff11;
+}
+
+input[type="text"][name="naam"]{
+background-color: #ff1111;
+}
+
+input[type="text"][name="naam"]:hover{
+background-color: #991111;
+}
+
+
+input[type="text"][name="voornaam"]{
+background-color: #1111ff;
+}
+input[type="text"][name="voornaam"]:hover{
+background-color: #111199;
+}
+
+
+input[type="text"]:focus{
+    background-color: #11ff11;
+}
+
+
+/*button opmaak*/
+label[for="tevreden"] {
+    color: #11ff11;
+}
+input[id="tevreden"]:checked + label[for="tevreden"] {
+    color: #116611;
+}
+
+label[for="ontevreden"] {
+    color: #ff1111;
+}
+input[id="ontevreden"]:checked + label[for="ontevreden"] {
+    color: #661111;
+}
+
+
+/*footer opmaak*/
+footer{
+    font-size: 0.75em;
+    text-align: right;
+}
