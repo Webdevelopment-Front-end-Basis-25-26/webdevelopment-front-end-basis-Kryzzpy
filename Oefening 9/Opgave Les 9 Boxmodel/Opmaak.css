@@ -1,0 +1,175 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Tahoma, sans-serif;
+    background-color: #317082;
+}
+
+input{
+    font-family: inherit;
+    font-size: 1em;
+}
+
+#container{
+    width: 965px;              
+    margin: 0 auto;            
+    padding: 20px;             
+    background-color: #ffffff; 
+    box-sizing: border-box; 
+}
+
+header h1{
+    background-color: #317082;
+    color: white;
+    text-decoration: none;
+    margin-top: 20px;                 
+    padding: 10px 20px;                   
+    border-radius: 10px;              
+    box-shadow: 5px 5px 10px #ccc;    
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+header nav {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header nav ol {
+    list-style: none;
+    display: inline;
+}
+
+header nav ol li {
+    display: inline;
+    background-color: #317082;
+    padding: 10px 5px;
+    border-radius: 10px 10px/ 5px 5px;
+}
+
+header nav ol li a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav ol:hover {
+    background-color: #333333;
+}
+
+header nav ol:hover li a {
+    color: #333333;
+}
+
+header nav ol li a:hover {
+    color: white;
+}
+
+#banner{
+    background-image: url('images/banner.jpg');
+    width: 905px;
+    height: 214px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#banner p {
+    width: 280px;
+    height: 214px;
+    padding: 20px;
+    color: white;
+    box-sizing: border-box;
+}
+
+#banner p::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#content h2{ 
+    font-size: 1.4em;
+    font-style: italic;
+    font-weight: normal;
+    background-color: hsl(192, 45%, 35%);
+    color: white;
+    padding: 5px;
+    border: 5px outset hsl(192, 45%, 25%);
+    border-top-right-radius: 20px;
+}
+
+#content p {
+    margin: 10px 5px;
+    padding: 0;
+    border-bottom: 1px dotted hsl(192, 45%, 25%);
+}
+
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    border: 4px ridge hsl(192, 45%, 25%);
+}
+
+table th, table td {
+    border: 1px solid hsl(192, 45%, 25%);
+    padding: 5px;
+}
+
+table th {
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+table tr:hover td {
+    background-color: rgba(49, 112, 130, 0.5);
+}
+
+fieldset {
+    border: 3px double #000;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend {
+    border: 3px double #000;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea {
+    border: 2px solid hsl(192, 45%, 25%);
+    padding: 5px;
+    border-radius: 10px 10px 5px 5px;
+    box-shadow: inset 0 0 4px #000000;
+    margin: 5px 0;
+}
+
+input[type="text"]:hover, 
+input[type="email"]:hover, 
+textarea:hover {
+    box-shadow: inset 0 0 8px #000000;
+}
+
+input[type="text"]:focus, 
+input[type="email"]:focus, 
+textarea:focus {
+    background-color: rgba(49, 112, 130, 0.5);
+    box-shadow: inset 0 0 8px #000000;
+    outline: none;
+}
+
+input[type="submit"] {
+    border: 2px solid hsl(192, 45%, 25%);
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #317082;
+    font-weight: bold;
+    text-transform: capitalize;
+    box-shadow: 5px 5px 0px #317082;
+    cursor: pointer;
+}
