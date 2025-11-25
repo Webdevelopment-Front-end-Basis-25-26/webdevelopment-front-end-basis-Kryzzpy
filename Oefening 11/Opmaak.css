@@ -1,0 +1,219 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: rgb(255, 199, 1, 0.4);
+}
+.container {
+    background-color: white;     
+    min-width: 600px;            
+    max-width: 1092px;           
+    margin: 0 auto;         
+}
+header {
+    min-height: 300px;                       
+    background-image: url("images/black_friday.jpg");
+    display: flex;
+    background-position: center center;       
+    background-size: cover;                   
+    background-repeat: no-repeat;
+    position: sticky;                 
+    top: 0;                                   
+    left: 0;
+    right: 0;
+    z-index: 1000;                            
+}
+header h1 {
+    font-family: "Lucida Handwriting", Tahoma, Arial, sans-serif;
+    font-weight: bold;
+    color: #00222e;
+    font-size: 60px;
+    text-align: center;
+    text-shadow: 2px 2px 1px #ffc701;
+    max-width: 40%;
+    position: absolute;
+    top: 40px;
+    right: 140px;
+}
+button {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #f08f00;
+    color: #00222e;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #00222e;
+    box-shadow: 3px 3px 3px #00222e;
+    z-index: 3000;
+    cursor: pointer;
+}
+button .uitleg {
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    background-color: #FFFFFF;
+    color: #00222e;
+    font-size: 0.75em;
+    width: 14em;
+    padding: 4px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 1px #00222e;
+    font-weight: normal;
+    display: none;
+    z-index: 2999;
+}
+button:hover .uitleg {
+    display: block;
+}
+nav {
+    margin: 10px;
+}
+ 
+nav a,
+nav li,
+aside a,
+aside li {
+    text-decoration: none;
+    list-style-type: none;
+    color: #00222e;
+}
+nav a {
+    display: block;
+    background-color: #f08f00;
+    width: 140px;
+    padding: 10px;
+    color: #00222e;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ffc701;
+}
+nav > ol {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ol > li {
+    position: relative;
+}
+
+nav > ol > li > a {
+    display: block;
+    background-color: #f08f00;
+    width: 140px;
+    padding: 10px;
+    color: #00222e;
+    text-decoration: none;
+}
+
+nav > ol > li > a:hover {
+    background-color: #ffc701;
+}
+
+nav > ol > li > ol {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 2000;
+}
+
+nav > ol > li:hover > ol {
+    display: block;
+}
+
+nav > ol > li > ol > li > a {
+    display: block;
+    background-color: #f08f00;
+    width: 140px;
+    padding: 10px;
+    color: #00222e;
+    text-decoration: none;
+}
+
+nav > ol > li > ol > li > a:hover {
+    background-color: #ffc701;
+}
+aside ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+aside ul li {
+    position: relative;
+}
+
+aside ul li > a {
+    display: block;
+    background-color: #ffc701;
+    border: 1px solid #00222e;
+    width: 120px;
+    padding: 10px;
+    color: #00222e;
+    text-decoration: none;
+}
+
+aside ul li > ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+aside ul li:hover > ul {
+    display: block;
+}
+
+aside ul li > ul > li > a {
+    display: block;
+    background-color: #ffc701;
+    border: 1px solid #00222e;
+    width: 120px;
+    padding: 10px;
+    color: #00222e;
+    text-decoration: none;
+}
+.content-container {
+    position: relative;
+}
+#content {
+    margin-right: 140px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#content p {
+    margin: 5px 0;
+}
+
+footer {
+    font-size: 0.75em;
+    font-style: italic;
+    text-align: right;
+    padding: 5px;
+    background-image: url("images/black_friday.jpg");
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
