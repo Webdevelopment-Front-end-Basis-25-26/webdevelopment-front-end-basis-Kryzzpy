@@ -1,0 +1,160 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat, Tahoma, Verdana, sans-serif;
+    background-color: hsl(0, 0%, 85%);
+}
+
+body > p {
+    background-color: #0066DD;
+    color: #DD6600;
+    padding: 10px;
+    height: 40px;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
+body > p span {
+    position: relative;
+    display: inline-block;
+    animation: scrolltext 6s linear infinite;
+    width: 100%;
+}
+
+@keyframes scrolltext {
+    from { transform: translateX(-10%); }
+    to   { transform: translateX(110%); }
+}
+
+.container {
+    background-color: white;
+    width: 960px;
+    margin: 60px auto 0 auto;
+}
+
+.content {
+    padding: 10px;
+}
+
+.content h2 {
+    font-size: 1.4em;
+    font-weight: normal;
+    color: white;
+    background-color: rgb(151, 151, 141);
+    padding: 5px;
+    border: 5px outset rgb(91, 90, 77);
+    border-top-right-radius: 20px;
+    transition: transform 0.3s;
+}
+
+.content h2:hover {
+    transform: scale(1.1);
+}
+
+table {
+    margin: 20px 0px;
+    border: 5px ridge rgb(91, 90, 77);
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid rgb(91, 90, 77);
+    padding: 5px;
+    transition: background-color 0.3s;
+}
+
+tr:hover td {
+    background-color: rgba(151, 151, 141, 0.5);
+}
+
+header {
+    height: 100px;
+    padding: 20px;
+    position: relative;
+    background-image: url("images/header.gif");
+    background-repeat: repeat-x;
+}
+
+header h1 {
+    color: white;
+    font-size: 50px;
+    transition: transform 0.7s ease;
+}
+
+header:hover h1 {
+    transform: translateX(450px);
+}
+
+.image-hover-over {
+    opacity: 0;
+    width: 192px;
+    height: 73px;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+
+    transition: opacity 0.7s ease;
+}
+
+header:hover .image-hover-over {
+    opacity: 1;
+}
+
+.image-hover-over img {
+    width: 100%;
+    display: block;
+    transition: opacity 0.7s ease;
+}
+
+.image-hover-over:hover img {
+    opacity: 0.3;
+}
+
+.image-hover-over div {
+    background-color: #002757;
+    color: white;
+    padding: 10px 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.7s ease;
+}
+
+.image-hover-over:hover div {
+    opacity: 1;
+}
+
+nav {
+    margin: 10px;
+}
+
+nav a {
+    background-color: #002757;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: transform 0.2s;
+}
+
+nav a:hover {
+    animation: wobble 0.4s ease;
+}
+
+@keyframes wobble {
+    0%   { transform: rotate(0deg); }
+    25%  { transform: rotate(5deg); }
+    50%  { transform: rotate(-5deg); }
+    75%  { transform: rotate(3deg); }
+    100% { transform: rotate(0deg); }
+}
