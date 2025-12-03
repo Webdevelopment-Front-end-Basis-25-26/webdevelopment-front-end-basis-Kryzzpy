@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="OefeningBasisLes14.css">
+</head>
+
+<body>
+	<div id="container">
+		<ul id="menu">
+			<li id="menuButton" class="closed"><button>Opgaves</button>
+				<ol>
+					<li><a href="#scorebord">Hou de score van 2 teams bij</a></li>
+					<li><a href="#kleurenkiezer">Maak een kleurenkiezer</a></li>
+					<li><a href="#leeftijd">Bereken je leeftijd</a></li>
+					<li><a href="#events">Spelen met events</a></li>
+				</ol>
+			</li>
+		</ul>
+
+
+		<div id="scorebord" class="oefening">
+			<h2>Oefening 1: Scorebord</h2>
+			<p>Maak een scorebord voor twee teams.</p>
+
+			<div class="team">
+				<h3>Team Rood</h3>
+				<div id="scoreRood" class="score">0</div>
+				<button id="btnRoodPlus1">+1</button>
+				<button id="btnRoodPlus3">+3</button>
+			</div>
+
+			<div class="team">
+				<h3>Team Blauw</h3>
+				<div id="scoreBlauw" class="score">0</div>
+				<button id="btnBlauwPlus1">+1</button>
+				<button id="btnBlauwPlus3">+3</button>
+			</div>
+
+			<br>
+			<button id="btnResetScores">Reset Scores</button><br>
+			<input id="valueRood"><button id="updateRood">Wijzig score rood</button><br>
+			<input id="valueBlauw"><button id="updateBlauw">Wijzig score blauw</button>
+		</div>
+
+		<div id="kleurenkiezer" class="oefening">
+			<h2>Oefening 2: Kleurenkiezer</h2>
+			<p>Verander de kleur van de box aan de hand van knoppen of een kleurenkiezer.</p>
+
+			<div id="kleurBox" class="kleur-box"></div>
+
+			<button id="btnRood">Rood</button>
+			<button id="btnBlauw">Blauw</button>
+			<button id="btnGroen">Groen</button>
+			<input type="color" id="kleurKiezer">
+		</div>
+
+		<div id="leeftijd" class="oefening">
+			<h2>Oefening 3: Leeftijd berekenen</h2>
+			<div><label>Naam: <input type="text" id="naam"></label>
+				<label>Voornaam: <input type="text" id="voornaam"></label><br>
+				<label>Geboortedatum: <input type="date" id="geboortedatum"></label>
+				<button id="btnBericht">Toon bericht</button>
+			</div>
+			<div id="leeftijdBericht"></div>
+
+		</div>
+
+		<div id="events" class="oefening">
+			<h2>Oefening 4: Mouse events</h2>
+			<div id="box"></div>
+			<div id="resultaat"></div>
+		</div>
+	</div>
+
+	<script src="OefeningBasisLes14.js"></script>
+</body>
+
+</html>

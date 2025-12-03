@@ -1,0 +1,25 @@
+body {
+    max-width: 960px;
+    font-family: Arial, sans-serif;
+    margin: 20px auto;
+}
+
+.oefening {
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.resultaat {
+    margin-top: 15px;
+    padding: 10px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
