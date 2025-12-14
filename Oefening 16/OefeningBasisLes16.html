@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <title>Operatoren, Programma verloop en Functies</title>
+  <link rel="stylesheet" href="OefeningBasisLes16.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Pizza beheer module</h1>
+
+    <!-- DEEL 1: INGREDIËNTEN -->
+    <div class="deel">
+      <h2>Deel 1: Ingrediënten Beheer</h2>
+
+      <div class="input-group">
+        <input type="text" id="ingredientInput" placeholder="Voeg ingrediënt toe (bijv. mozzarella)">
+        <button id="addIngredient">Voeg toe</button>
+      </div>
+
+      <div class="input-group">
+        <button id="showIngredients">Toon alle ingrediënten</button>
+      </div>
+
+      <div id="ingredientenResultaat" class="resultaat">
+        Nog geen ingrediënten toegevoegd
+      </div>
+    </div>
+
+    <!-- DEEL 2: PIZZA'S -->
+    <div class="deel">
+      <h2>Deel 2: Pizza's Beheer</h2>
+
+      <div class="input-group">
+        <input type="text" id="pizzaNaam" placeholder="Pizza naam">
+        <input type="number" id="pizzaPrijs" placeholder="Prijs" step="0.01">
+        <input type="number" id="pizzaAantal" placeholder="Aantal" min="1" value="1">
+        <button id="addPizza">Voeg pizza toe</button>
+      </div>
+
+      <div class="input-group">
+        <button id="showPizzas">Toon pizza's</button>
+        <button id="showTotal">Bereken totaal</button>
+      </div>
+
+      <div id="pizzasResultaat" class="resultaat">
+        Nog geen pizza's toegevoegd
+      </div>
+
+      <div class="input-group">
+        <label>Filter lijst op min. aantal:</label>
+        <input type="number" id="minAantal" value="2" min="1">
+        <button id="filterPizzas">Filter</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="OefeningBasisLes16.js"></script>
+</body>
+
+</html>
