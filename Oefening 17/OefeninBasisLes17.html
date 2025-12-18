@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takenlijst</title>
+    <link rel="stylesheet" href="OefeningBasisLes17.css">
+</head>
+
+<body>
+    <div id="app">
+        <h1>Mijn Takenlijst</h1>
+        <div id="invoer-sectie">
+            <input type="text" id="taak-input" class="invoer-veld" placeholder="Nieuwe taak...">
+            <select id="prioriteit-select" class="invoer-veld">
+                <option value="laag">Laag</option>
+                <option value="normaal" selected>Normaal</option>
+                <option value="hoog">Hoog</option>
+            </select>
+            <button id="toevoegen-btn" class="invoer-veld">Toevoegen</button>
+        </div>
+
+        <ul id="taken-lijst">
+            <li class="taak-titel"><span>Voltooid</span><strong>Taakomschrijving</strong><span>Verwijder</span></li>
+            <!-- Hier komen de taken -->
+        </ul>
+        <div id="teller">
+            <p>Nog <span id="aantal">0</span> taken te doen</p>
+        </div>
+        <div id="actie-knoppen">
+            <button class="actie-btn" id="markeer-hoog-btn">Markeer hoge prioriteit</button>
+            <button class="actie-btn" id="verberg-voltooide-btn">Verberg voltooide taken</button>
+        </div>
+
+    </div>
+  <script src="OefeningBasisLes17.js"></script>
+</body>
+
+</html>
